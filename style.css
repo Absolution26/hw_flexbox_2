@@ -1,4 +1,4 @@
-@import url(../hw2/nullstyle.css);
+@import url(nullstyle.css);
 
 body{
     background-color:#e2e7ec;
@@ -21,9 +21,9 @@ body{
     background-color:white;
 }
 .block:first-child {
-    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ), url('../hw2/img/background_car.png');
-    background: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../hw2/img/background_car.png');
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../hw2/img/background_car.png');
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ), url('img/background_car.png');
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background_car.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/background_car.png');
     background-repeat: no-repeat;
     width:740px; 
     display:-webkit-box; 
@@ -129,6 +129,6 @@ body{
 }
 @font-face {
     font-family: 'HansKendrick-Regular';
-    src: url("../hw2/fonts/HansKendrick-Regular.otf") format("opentype");
+    src: url("fonts/HansKendrick-Regular.otf") format("opentype");
     }Regular.otf") format("opentype");
     }
