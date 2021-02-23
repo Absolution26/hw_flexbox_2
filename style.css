@@ -8,8 +8,11 @@ body{
     margin:0 auto;
 }
 .wrap{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .block {
     width:360px;
@@ -18,13 +21,21 @@ body{
     background-color:white;
 }
 .block:first-child {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ), url('../hw2/img/background_car.png');
+    background: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../hw2/img/background_car.png');
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../hw2/img/background_car.png');
-    /* background-image: url(../hw2/img/background_car.png); */
     background-repeat: no-repeat;
     width:740px; 
+    display:-webkit-box; 
+    display:-ms-flexbox; 
     display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-pack:end;
+        -ms-flex-pack:end;
+            justify-content:flex-end;
     
 }
 .block__date1{
@@ -53,8 +64,13 @@ body{
     width:319px;
     height:238px;
     margin: 28px 13px 25px 28px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction:column;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
 }
 .block:nth-child(4) .block__info{
     padding: 40px 0 53px 0;
@@ -85,9 +101,15 @@ body{
     height:54px;
 }
 .footer{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items:center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     padding:80px 0;
 }
 
@@ -108,4 +130,5 @@ body{
 @font-face {
     font-family: 'HansKendrick-Regular';
     src: url("../hw2/fonts/HansKendrick-Regular.otf") format("opentype");
+    }Regular.otf") format("opentype");
     }
